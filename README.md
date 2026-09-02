@@ -32,11 +32,10 @@ ed2-sorting-list03-cpp/
 
 Each `.cpp` file is **standalone** (has its own `main()`) and is compiled as an independent executable. All of them follow the same three-block pattern:
 
-| Block | Responsibility |
-|---|---|
+| Block        | Responsibility |
+|--------------|---|
 | **Pure logic** | Implements the algorithm itself, using STL (`vector`, `string`, etc). Does not perform `cin`/`cout`. |
-| `onlineJudge()` | Adapter: reads input with `cin`, calls the pure logic, prints with `cout`. |
-| `runExer...()` | Runs the examples from the statement locally and compares against the expected output (`[PASSED]` / `[FAILED]`). |
+| `main`       | Adapter: reads input with `cin`, calls the pure logic, prints with `cout`. |
 
 ---
 
@@ -119,8 +118,10 @@ Input            Output
 
 ```cpp
 int main() {
-    runExer01BubbleSortCountSwaps();  // <- local test mode (active)
-    // onlineJudge();                 // <- online judge mode (commented)
+    int x;
+    cin >> x;
+    vector<int> arr(n);
+    runExer01BubbleSortCountSwaps(arr);  // <- local test mode (active)
     return 0;
 }
 ```
