@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD 20)
 #        src/Exer05_InsertionInversions.cpp)
 
 # Cada arquivo .cpp com sua própria função main ganha seu próprio executável independente:
-add_executable(Exer01_BubbleSortSwapCount src/Exer01_BubbleSortSwapCount.cpp)
+add_executable(Exer01_BubbleSortSwapCount src/Exer01_BubbleSortSwapCount.cpp  src/Exer01_BubbleSortSwapCountLeetCode.cpp)
 add_executable(Exer02_SelectionKSmallest src/Exer02_SelectionKSmallest.cpp)
 add_executable(Exer03_InsertionKSorted src/Exer03_InsertionKSorted.cpp)
 add_executable(Exer04_BubbleParitySort src/Exer04_BubbleParitySort.cpp)
